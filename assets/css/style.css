@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat','Arial';
+}
+header{
+    background-color: black;
+    height: 100px;
+    margin: auto;
+    
+}
+.header{
+    max-width: 1140px; /*passou de 1140px ela não expande e depois isso faz conteudo no meio com margin auto*/
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #0000;
+}
+.logo{
+    width: 100px;
+}
+.logoImg{
+    width: 80px;
+    height: 80px;
+    background-color: #b28756;
+}
+.menu{
+    flex: 1; /*menu pega toda a área restante*/
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.menu ul,
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    color: #ffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right:5px ;
+    display: flex;
+    height: 100px;
+    align-items: center;
+   
+}
+.menu li :hover{
+    border-bottom: 1px solid #b28756;
+}
