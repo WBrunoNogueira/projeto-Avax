@@ -27,6 +27,7 @@ header{
     width: 80px;
     height: 80px;
     background-color: #b28756;
+    border-radius: 40px;
 }
 .menu{
     flex: 1; /*menu pega toda a área restante*/
@@ -50,8 +51,72 @@ header{
     display: flex;
     height: 100px;
     align-items: center;
+    font-weight: bold;
    
 }
-.menu li :hover{
+.menu li :hover,
+.menu li .active{
     border-bottom: 1px solid #b28756;
+    color: #cccc;
+
+}
+
+/*BANEER E SLIDERS*/
+.banner{
+    height: calc(100vh - 100px); /*A ALTURA DO BANNER FOI FEITO UM CALCULO - 100VH  pega toda a altura do despositivo - porém ria barra de rolagem e para compensar isso deve descontar a altura do header que é de 100px*/
+    background-image: url('/assets/images/bg.jpg');
+    background-position: bottom; /*posição mais baixa do background*/
+    background-size: cover; /*ajusta o background de acordo com a tela*/
+    overflow: hidden; /*esconde tudo que tem na barra*/
+    
+}
+
+/*CRIAÇÃO DO SLIDE */
+.banner .sliders{
+    height: 100%;
+    width: 1000vw; /*tamanho de 10 telas logo 1000 vw*/
+
+}
+.banner .slide{
+    width: 100vW; /*UM SLIDE TEM QUER TER A LARGURA DA TELA TODA */
+    height: 100%;
+    display: inline-block; /*faz fazer ficar um ao lado do outro inline-block*/
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.banner .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+}
+.banner h1{
+    text-transform: uppercase; /*maiusculo*/
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+.banner h1 span{
+    color: #b28756;
+}
+.banner h2{
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.banner a{
+    display: block; /*display block para alterar funçoes de espaçamento*/
+    background-color: #b28756;
+    font-size: 15px;
+    color: #ffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 600px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.banner .sliders-ponters{
+    
 }
