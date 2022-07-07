@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Montserrat','Arial';
+    overflow-x: hidden; /*TODO CONTEUDO QUE PASSAR PARA O EIXO X, seja ignorado. resolver o problema de borda **/
 }
 header{
     background-color: black;
@@ -117,6 +118,32 @@ header{
     border-radius: 20px;
 }
 
-.banner .sliders-ponters{
-    
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    position: absolute; /*como os pontos do slide estão escondidosde baixo do banner que ocupa toda a altura da pagina, aplica-se posição absoluta para ele aparecer sem depender do tamanho do banner*/
+   margin-bottom: 100px;
+   margin-top: -50px; /*fazer subir os botoes para cima*/
+
+   display: flex;
+   justify-content: center;
+}
+/*BOLINHAS*/
+.banner .pointer{
+    height: 15px;
+    width: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer; /*faz o ponteiro do mouse ficar com a forma de click mas a dinamica de click é javascript*/
+}
+.banner .pointer.active{
+    background-color: #b28756;
+}
+
+/*section default*/
+
+.default{
+    background-color: red;
 }
