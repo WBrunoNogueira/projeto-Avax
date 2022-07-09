@@ -145,5 +145,39 @@ header{
 /*section default*/
 
 .default{
-    background-color: red;
+    padding-top: 50px;
+    padding-bottom:50px ;
+}
+.default .section-title ,
+.default .section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .section-title{
+    font-size: 20px;
+}
+.default .section-desc{
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body{
+   margin: auto;
+   max-width: 1140px; 
+   min-height: 100px;
+   background-color: #ccc;
+}
+.default.light{
+    background-color: #f7f7f7;
+
+}
+.default.dark{
+    background-color: #000;
+    
+}
+.default.dark .section-title{
+    color: #fff;
 }
