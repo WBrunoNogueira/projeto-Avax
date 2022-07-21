@@ -14,7 +14,7 @@ header{
     
 }
 .header{
-    max-width: 1140px; /*passou de 1140px ela não expande e depois isso faz conteudo no meio com margin auto*/
+    max-width: 1300px; /*passou de 1140px ela não expande e depois isso faz conteudo no meio com margin auto*/
     height: 100px;
     margin: auto;
     display: flex;
@@ -42,6 +42,7 @@ header{
 }
 .menu ul{
     display: flex;
+    
 }
 .menu li a{
     color: #ffff;
@@ -53,6 +54,7 @@ header{
     height: 100px;
     align-items: center;
     font-weight: bold;
+    font-size: 15px;
    
 }
 .menu li :hover,
@@ -61,6 +63,19 @@ header{
     color: #cccc;
 
 }
+.button{
+    display: inline-block; /*display inline block para alterar funçoes de espaçamento*/
+    background-color: #b28756;
+    font-size: 15px;
+    color: #ffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 600px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
 
 /*BANEER E SLIDERS*/
 .banner{
@@ -104,18 +119,6 @@ header{
 .banner h2{
     margin-top: 20px;
     text-transform: uppercase;
-}
-.banner a{
-    display: block; /*display block para alterar funçoes de espaçamento*/
-    background-color: #b28756;
-    font-size: 15px;
-    color: #ffff;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 30px;
-    font-weight: 600px;
-    margin-top: 30px;
-    border-radius: 20px;
 }
 
 .banner .sliders-pointers{
@@ -167,17 +170,124 @@ header{
 .default .section-body{
    margin: auto;
    max-width: 1140px; 
-   min-height: 100px;
-   background-color: #ccc;
 }
 .default.light{
     background-color: #f7f7f7;
 
 }
+.default.light .section-title,
+.default.light .section-body{
+    color: #000;
+}
 .default.dark{
     background-color: #000;
     
 }
-.default.dark .section-title{
+.default.dark .section-title,
+.default.dark .section-body{
     color: #fff;
+}
+
+
+
+
+
+
+/*css de area especifico*/
+.section-aboutus{
+    display: flex;
+}
+.section-aboutus--left{
+    flex: 1;
+}
+.section-aboutus--rigt{
+    width: 520px;
+    text-align: center;
+}
+.section-aboutus--rigt img{
+    width: 480px; /*a imagem quebrou defini largura no elemento */
+    box-shadow: 0px 5px 10px #333;
+}
+.section-aboutus--left p{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+
+
+/*seção de serviços*/
+.section-services{
+    display: flex;
+    border-right: 1px solid #333;
+    
+}
+.section-service:first-child{
+    border-left: 1px solid #333; /*so o primeiro aplica o left*/
+}
+
+.section-service{
+    flex: 1;
+    text-align: center;
+    /*para aplicar as bordas paralelas na vertical se porna direita e na esqueda uma borda fica mais grossa que a outra a solução e escolher um lado e usar o elemento fist:child na borda esqueda */
+    /*border-right: 1px solid #333;*/
+    padding: 5px;
+}
+
+.section-service h4{
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+.section-service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+
+
+
+
+
+/*PROJECTS FILTERS*/
+
+.section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.section-projects--filters{
+    border:1px solid #CCC ;
+    background-color: #eee;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.section-projects--filters ul ,
+.section-projects--filters li{
+
+    list-style: none;
+
+}
+    
+.section-projects--filters li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #DDD; /*aplica a borda vertical no li */
+    color: #555;
+    border-bottom: 3px solid #EEE;
+    cursor: pointer;
+}
+.section-projects--filters li:hover{
+    border-bottom: 3px solid #b28756;
+}
+.section-projects--filters li:first-child{
+    border: 0; /*remove  primeira borda */
 }
