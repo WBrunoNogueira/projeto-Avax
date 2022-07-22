@@ -48,8 +48,8 @@ header{
     color: #ffff;
     text-transform: uppercase;
     text-decoration: none;
-    padding-left: 5px;
-    padding-right:5px ;
+    padding-left: 10px;
+    padding-right:10px ;
     display: flex;
     height: 100px;
     align-items: center;
@@ -91,13 +91,15 @@ header{
 .banner .sliders{
     height: 100%;
     width: 1000vw; /*tamanho de 10 telas logo 1000 vw*/
+    
 
 }
 .banner .slide{
-    width: 100vW; /*UM SLIDE TEM QUER TER A LARGURA DA TELA TODA */
+    width: 100VW; /*UM SLIDE TEM QUER TER A LARGURA DA TELA TODA */
     height: 100%;
     display: inline-block; /*faz fazer ficar um ao lado do outro inline-block*/
     background-color: rgba(0, 0, 0, 0.7);
+    
 }
 .banner .slidearea{
     display: flex;
@@ -169,7 +171,7 @@ header{
 
 .default .section-body{
    margin: auto;
-   max-width: 1140px; 
+   max-width:  1300px; 
 }
 .default.light{
     background-color: #f7f7f7;
@@ -289,5 +291,21 @@ header{
     border-bottom: 3px solid #b28756;
 }
 .section-projects--filters li:first-child{
-    border: 0; /*remove  primeira borda */
+    border-left: 0; /*remove  primeira borda */
+}
+
+.section-projects--photos{ /*para a responsividade se o dispositivo for muito grane ele tem que pegar o maior espaço disponivel e se ser muito pequeno ele deve ter a  */
+    width: 100vw;
+    max-width: 1300px;
+    margin-top: 20px;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.section-projects-photo{
+    width: 280px;
+    
 }
