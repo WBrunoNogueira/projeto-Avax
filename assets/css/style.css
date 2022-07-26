@@ -209,6 +209,7 @@ header{
 .section-aboutus--rigt img{
     width: 480px; /*a imagem quebrou defini largura no elemento */
     box-shadow: 0px 5px 10px #333;
+    border-radius: 10px;
 }
 .section-aboutus--left p{
     font-size: 14px;
@@ -298,14 +299,55 @@ header{
     width: 100vw;
     max-width: 1300px;
     margin-top: 20px;
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  
 
 }
 
+
+/*galeria de fotas*/
 .section-projects-photo{
     width: 280px;
+    
+}
+.section-projects-photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.section-projects-photoarea img{
+    width: inherit; /*herdar as propriedades do anteriori photoarea*/
+    height: inherit;
+}
+.section-projects--photoinfo{ /*deixa escuro*/
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;/**/
+    height: inherit;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+.section-projects--photoinfo h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-projects-photoarea:hover .section-projects--photoinfo{ /*paddando o mouse na imagem ele aplica o display flex em photo area aparecendo a info */
+    display: flex;
+}
+
+
+
+
+/*section team*/
+.bg-team{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg.jpg'); /*backgroud image com o rgba*/
+    background-size: cover;
+    background-position: center;
     
 }
