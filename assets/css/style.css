@@ -345,11 +345,17 @@ header{
 
 
 /*section team*/
+
 .bg-team{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg.jpg'); /*backgroud image com o rgba*/
     background-size: cover;
     background-position: center;
     
+}
+.section-team{
+    overflow: hidden;
+    max-width: 880px;
+    margin:auto
 }
 
 .section-team .sliders{
@@ -359,10 +365,13 @@ header{
 
 }
 .section-team .slide{
-    width: 100VW; /*UM SLIDE TEM QUER TER A LARGURA DA TELA TODA */
+    width: 280px; /*UM SLIDE TEM QUER TER A LARGURA DA TELA TODA */
     height: 100%;
+    min-height: 300px;
     display: inline-block; /*faz fazer ficar um ao lado do outro inline-block*/
-    background-color: rgba(0, 0, 0, 0.7);
+    color: #000;
+    background-color: #fff;
+    margin-right: 20px;
     
 }
 .section-team .slidearea{
@@ -371,5 +380,63 @@ header{
     height: 100%;
     align-items: center;
     justify-content: center;
-    color: #ffff;
+    padding: 30px;
+
+   
+}
+.section-team-area .sliders-pointers{
+    margin-top: 30px;
+    height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*BOLINHAS*/
+.section-team-area .pointer{
+    height: 15px;
+    width: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer; 
+}
+.section-team-area .pointer.active{
+    background-color: #b28756;
+}
+
+.section-team--avatar{
+    width: 150px;
+    height: auto;
+
+}
+.section-team--name{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.section-team--role{
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+.section-team--social{
+    display: flex;
+    margin-top: 20px;
+    
+
+}
+.section-team--social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+.section-team--social a:hover{
+    background-color: #b28756;
 }
