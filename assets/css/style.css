@@ -351,3 +351,25 @@ header{
     background-position: center;
     
 }
+
+.section-team .sliders{
+    height: 100%;
+    width: 1000vw; /*tamanho de 10 telas logo 1000 vw*/
+    
+
+}
+.section-team .slide{
+    width: 100VW; /*UM SLIDE TEM QUER TER A LARGURA DA TELA TODA */
+    height: 100%;
+    display: inline-block; /*faz fazer ficar um ao lado do outro inline-block*/
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+.section-team .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+}
