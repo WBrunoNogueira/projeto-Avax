@@ -86,7 +86,7 @@ header{
 /*BANEER E SLIDERS*/
 .banner{
     height: calc(100vh - 100px); /*A ALTURA DO BANNER FOI FEITO UM CALCULO - 100VH  pega toda a altura do despositivo - porém ria barra de rolagem e para compensar isso deve descontar a altura do header que é de 100px*/
-    background-image: url('/assets/images/bg.jpg');
+    background-image: url('../images/bg.jpg');
     background-position: bottom; /*posição mais baixa do background*/
     background-size: cover; /*ajusta o background de acordo com a tela*/
     overflow: hidden; /*esconde tudo que tem na barra*/
