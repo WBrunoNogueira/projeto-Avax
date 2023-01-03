@@ -177,7 +177,7 @@ header{
 
 .default .section-body{
    margin: auto;
-   max-width:  1300px; 
+   max-width: 2000px;
 }
 .default.light{
     background-color: #f7f7f7;
@@ -204,12 +204,13 @@ header{
 /*css de area especifico*/
 .section-aboutus{
     display: flex;
+    padding: 0px 100px 0px 100px;
 }
 .section-aboutus--left{
     flex: 1;
 }
 .section-aboutus--rigt{
-    width: 520px;
+    width: 650px;
     text-align: center;
 }
 .section-aboutus--rigt img{
@@ -496,7 +497,7 @@ testimonials .section-body {
     margin-right:30px;
 }
 .section-testimonials .sliders-pointers {
-    width:100vw;
+    /* width:100vw; */
     height:20px;
     display:flex;
     justify-content: center;
